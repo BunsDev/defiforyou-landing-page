@@ -1,0 +1,7 @@
+
+de_modules
+node_modules
+npm-debug*
+.nuxt
+
+image-landing

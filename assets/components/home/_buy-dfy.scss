@@ -1,0 +1,264 @@
+// BUY DFY
+.buy-dfy {
+  margin-top: 30px;
+  font-family: "Inter";
+
+  @media (min-width: 960px) {
+    margin-top: 65px;
+  }
+}
+
+.buy-dfy-img {
+  @media (min-width: 960px) {
+    margin-left: 60px;
+  }
+  .buy-dfy__card {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    @media (max-width: 960px) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.buy-dfy__title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 12px;
+  line-height: 48px;
+
+  @media (min-width: 960px) {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 0;
+    text-align: left;
+
+    @media (min-width: 960px) {
+      text-align: right;
+    }
+  }
+}
+
+.buy-dfy__subtext {
+  color: #9fa6b2;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: left;
+
+  @media (min-width: 960px) {
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 90px;
+  }
+}
+
+.buy-dfy__input {
+  background: #23252e;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px 12px;
+
+  @media (min-width: 960px) {
+    padding: 32px 40px 40px 40px;
+  }
+}
+
+.buy-dfy__tabs {
+  display: flex;
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    color: $white;
+    display: inline-block;
+    padding: 16px 26px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+
+    @media (min-width: 960px) {
+      font-size: 16px;
+    }
+  }
+
+  .active {
+    color: #f8b017;
+    font-weight: 600;
+    background: #23252e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    span {
+      color: #f8b017;
+    }
+  }
+  .buy-dfy__tabs--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    span {
+      white-space: nowrap;
+      @media (max-width: 600px) {
+        padding: 4px 0;
+      }
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+      @media (min-width: 600px) {
+        justify-content: flex-start;
+      }
+      img {
+        @media (max-width: 960px) {
+          width: 30px;
+          height: 21px;
+          padding: 0;
+        }
+      }
+      .img-rectangle {
+        padding: 0 8px;
+        @media (max-width: 1264px) {
+          padding: 0 4px;
+        }
+        @media (max-width: 960px) {
+          width: auto;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+  .tab-1 {
+    padding-left: 0;
+    padding-right: 12px;
+    @media (max-width: 960px) {
+      padding-right: 0;
+    }
+    .tab-name {
+      text-align: center;
+      @media (min-width: 600px) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+// BUY DFY WITH CREDIT CARD
+.input-card__label {
+  font-weight: 500;
+  color: $white;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.input-card__field {
+  display: flex;
+  align-items: center;
+
+  .select-currency {
+    max-width: 110px;
+    margin-left: 8px;
+
+    @media (min-width: 960px) {
+      max-width: 120px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.checkbox {
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.checkbox-text {
+  color: #ffffff;
+  font-size: 14px;
+
+  a {
+    color: #2596ff;
+    text-decoration: underline;
+  }
+}
+
+.input-card__btn button {
+  border-radius: 100px;
+  font-size: 16px;
+}
+
+.change-wallet {
+  color: #ffffff;
+  margin-top: -7px;
+  margin-right: -20px;
+
+  @media (min-width: 960px) {
+    margin-top: -5px;
+    margin-right: -20px;
+  }
+}
+
+// BUY DFY ON EXCHANGES
+.on-exchanges {
+  overflow-y: auto;
+  height: 340px;
+
+  @media (min-width: 960px) {
+    padding: 42px 0;
+    height: 480px;
+  }
+}
+
+.on-exchanges_link {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  color: $white;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.3s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: #f8b017;
+    height: 62px;
+    width: 300px;
+
+    @media (min-width: 600px) {
+      width: 450px;
+    }
+
+    @media (min-width: 960px) {
+      width: 407px;
+    }
+
+    @media (min-width: 1264px) {
+      width: 430px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    width: 407px;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 36px;
+  }
+}

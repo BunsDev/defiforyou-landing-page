@@ -1,0 +1,40 @@
+$--font-family-sans-serif: 'Inter', sans-serif;
+$--font-family-heading: 'dwm', sans-serif;
+$--font-family-body: $--font-family-sans-serif;
+
+$--color-primary: #F8B017;
+$--color-danger: #F05252;
+$--color-info: #1cbacc;
+$--color-warning: #837c94;
+
+$--color-up: #31C48D;
+$--color-down: $--color-danger;
+
+$--color-background-page: #171A23;
+$--color-text-body: #9FA6B2;
+$--color-text-heading: white;
+
+$--gap-home-section: 2em;
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1920px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $sm - 1) { @content; }
+  } @else if $media == sm {
+    @media only screen and (min-width: $sm) { @content; }
+  } @else if $media == sm-down {
+    @media only screen and (max-width: $md - 1) { @content; }
+  } @else if $media == md {
+    @media only screen and (min-width: $md) { @content; }
+  } @else if $media == md-down {
+    @media only screen and (max-width: $lg - 1) { @content; }
+  } @else if $media == lg {
+    @media only screen and (min-width: $lg) { @content; }
+  } @else if $media == xs-only {
+    @media only screen and (max-width: $sm - 1) { @content; }
+  }
+}

@@ -1,0 +1,42 @@
+@keyframes expose-backdrop {
+  from { backdrop-filter: blur(0); }
+  to { backdrop-filter: blur(20); }
+}
+
+@keyframes shine-up {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes floating {
+  0% { transform: translateY(-20px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(-20px); }
+}
+
+.expose-backdrop-enter-active {
+  animation: expose-backdrop .5s;
+}
+
+.expose-backdrop-leave-active {
+  animation: expose-backdrop .5s reverse;
+}
+
+.fade-in-enter-active {
+  animation: fade-in .25s;
+}
+
+.fade-in-leave-active {
+  animation: fade-in .25s reverse;
+}
